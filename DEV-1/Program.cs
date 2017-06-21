@@ -16,12 +16,11 @@ namespace ChangeNumbers
                 String num = k.ToString();
                 if (k % 3 == 0)
                 {
-                    //num=k
                     Console.Write("3*" + k / 3);
                 }
                 else
                 {
-                    Console.Write(" "+ num + " ");
+                    Console.Write(" " + num + " ");
                 }
             }
             Console.Write("\nPress any key...");
