@@ -10,7 +10,6 @@ namespace ChangeNumbers
     {
         static void Main(string[] args)
         {
-            
             for (int k = 0; k <= 100; k++)
             {
                 String num = k.ToString();
