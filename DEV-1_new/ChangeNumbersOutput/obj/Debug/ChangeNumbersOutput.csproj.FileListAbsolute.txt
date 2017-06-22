@@ -1,0 +1,12 @@
+E:\Desktop\NEW1\ChangeNumbersOutput\ChangeNumbersOutput\bin\Debug\ChangeNumbersOutput.exe.config
+E:\Desktop\NEW1\ChangeNumbersOutput\ChangeNumbersOutput\bin\Debug\ChangeNumbersOutput.exe
+E:\Desktop\NEW1\ChangeNumbersOutput\ChangeNumbersOutput\bin\Debug\ChangeNumbersOutput.pdb
+E:\Desktop\NEW1\ChangeNumbersOutput\ChangeNumbersOutput\obj\Debug\ChangeNumbersOutput.csprojResolveAssemblyReference.cache
+E:\Desktop\NEW1\ChangeNumbersOutput\ChangeNumbersOutput\obj\Debug\ChangeNumbersOutput.exe
+E:\Desktop\NEW1\ChangeNumbersOutput\ChangeNumbersOutput\obj\Debug\ChangeNumbersOutput.pdb
+E:\Desktop\NEW1 — копия\ChangeNumbersOutput\ChangeNumbersOutput\bin\Debug\ChangeNumbersOutput.exe.config
+E:\Desktop\NEW1 — копия\ChangeNumbersOutput\ChangeNumbersOutput\bin\Debug\ChangeNumbersOutput.exe
+E:\Desktop\NEW1 — копия\ChangeNumbersOutput\ChangeNumbersOutput\bin\Debug\ChangeNumbersOutput.pdb
+E:\Desktop\NEW1 — копия\ChangeNumbersOutput\ChangeNumbersOutput\obj\Debug\ChangeNumbersOutput.csprojResolveAssemblyReference.cache
+E:\Desktop\NEW1 — копия\ChangeNumbersOutput\ChangeNumbersOutput\obj\Debug\ChangeNumbersOutput.exe
+E:\Desktop\NEW1 — копия\ChangeNumbersOutput\ChangeNumbersOutput\obj\Debug\ChangeNumbersOutput.pdb
