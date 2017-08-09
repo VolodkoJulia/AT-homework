@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CF4AD4E5-3D53-4A28-A401-B8663B341336}</ProjectGuid>
+    <ProjectGuid>{B7129A78-D11C-461E-BE62-8448DB0DF0B5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Numsequence_new</RootNamespace>
     <AssemblyName>Numsequence_new</AssemblyName>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArgsFromCMD.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SequenceAnalysis.cs" />

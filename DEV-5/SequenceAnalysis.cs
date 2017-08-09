@@ -58,13 +58,11 @@ namespace Numsequence_new
         {
             if (result) 
             {
-                // Console.WriteLine(ENTERED_5);
-                return "Your sequence is nondecreasing.\n";
+                return ENTERED_5;
             }
             else
             {
-                // Console.WriteLine(ENTERED_6);
-                return "Your sequence is not nondecreasing.\n";
+                return ENTERED_5;
             }
 
         }

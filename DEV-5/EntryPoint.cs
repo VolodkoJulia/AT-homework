@@ -15,41 +15,60 @@ namespace Numsequence_new
         /// The method with objects and сheck for exceptions 
         /// </summary>
         /// <param name="args">
-        /// From command line, we don't need them in this task
+        /// From command line
         /// </param>
         static void Main(string[] args)
         {
-            bool flag = true;
-            while (flag)
+            if (args.Length != 0)
             {
-                try
+                var arguments = new ArgsFromCMD();
+                int[] Array = arguments.GetArgs(args);
+                arguments.OutputArgsToConsole();
+                if (arguments.SequenceLenght())
                 {
-                    WriteLine(ENTERED_2);
-                    SequenceAnalysis sequenceAnalisys = new SequenceAnalysis();
-                    if (sequenceAnalisys.SequenceLenght())
+                    bool number = arguments.CheckSequence(Array);
+                    Write(arguments.Result(number));
+                }
+                else
+                {
+                    Write(ENTERED_1);
+                }
+                ReadKey();
+            }
+            else
+            {
+                bool flag = true;
+                while (flag)
+                {
+                    try
                     {
-                        int[] Array = sequenceAnalisys.InputNumber();
-                        bool result = sequenceAnalisys.CheckSequence(Array);
-                        Write(sequenceAnalisys.ShowResult(result));
+                        WriteLine(ENTERED_2);
+                        SequenceAnalysis sequenceAnalisys = new SequenceAnalysis();
+                        if (sequenceAnalisys.SequenceLenght())
+                        {
+                            int[] Array = sequenceAnalisys.InputNumber();
+                            bool result = sequenceAnalisys.CheckSequence(Array);
+                            Write(sequenceAnalisys.ShowResult(result));
+                        }
+                        else
+                        {
+                            Write(ENTERED_1);
+                        }
+                        WriteLine(ENTERED_4);
+                        if (ReadLine().Equals("NEXT"))
+                        {
+                            continue;
+                        }
                     }
-                    else
+                    catch (FormatException)
                     {
-                        Write(ENTERED_1);
-                    }
-                    WriteLine(ENTERED_4);
-                    if (ReadLine().Equals("NEXT"))
-                    {
+                        WriteLine(ENTERED_3);
                         continue;
                     }
-                }
-                catch (FormatException)
-                {
-                    WriteLine(ENTERED_3);
-                    continue;
-                }
-                flag = false;
+                    flag = false;
 
-                ReadKey();
+                    ReadKey();
+                }
             }
         }
     }
