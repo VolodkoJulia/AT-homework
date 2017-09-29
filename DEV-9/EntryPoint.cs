@@ -12,10 +12,17 @@ namespace RandomChangeTheSymbolsInString
       string sourceLine = "QWERTYUIOP";
       string lineForSubstitution = "asdfgh";
 
-      StringSubstitute stringSubstitute = new StringSubstitute(sourceLine, lineForSubstitution);
-      string resultOfSubstitution = stringSubstitute.Substitute();
-
-      Write("The source line is:\n" + sourceLine + "\nThe line for substitution is:\n" + lineForSubstitution + "\nThe line after substitution is:\n" + resultOfSubstitution);
+      try
+      { 
+        StringSubstitute stringSubstitute = new StringSubstitute(sourceLine, lineForSubstitution);
+        string resultOfSubstitution = stringSubstitute.Substitute();
+        Write("The source line is:\n" + sourceLine + "\nThe line for substitution is:\n" + lineForSubstitution + "\nThe line after substitution is:\n" + resultOfSubstitution);
+      }
+      catch (EmptyStringException ex)
+      {
+        WriteLine(ex.Message);
+      }
+      
       ReadKey();
     }
   }  

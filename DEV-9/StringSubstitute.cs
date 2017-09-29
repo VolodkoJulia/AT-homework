@@ -15,6 +15,10 @@ namespace RandomChangeTheSymbolsInString
     //Field initialization:
     public StringSubstitute(string sourceLine, string lineForSubstitution)
     {
+      if(sourceLine.Length == 0 || lineForSubstitution.Length == 0)
+      {
+        throw new EmptyStringException(); 
+      }
       SourceLine = sourceLine;
       LineForSubstitution = lineForSubstitution;
     }
