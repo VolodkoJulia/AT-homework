@@ -2,7 +2,7 @@
 
 namespace RandomChangeTheSymbolsInString
 {
-  //This class consists of the methods which let us to set the random positions and the random length of the lines's part
+  //This class consists of the methods which let us to set the random positions and the random lengthOfSubstringInSourceLine of the lines's part
   //and allowes to replace this parts in established positions
   class StringSubstitute
   {
@@ -12,7 +12,7 @@ namespace RandomChangeTheSymbolsInString
     public string LineForSubstitution { get; set; }
     public Random rnd = new Random();
 
-    //Field initialization:
+    //Field initialization and condition of the exception
     public StringSubstitute(string sourceLine, string lineForSubstitution)
     {
       if(sourceLine == null || lineForSubstitution == null)
@@ -23,38 +23,34 @@ namespace RandomChangeTheSymbolsInString
       LineForSubstitution = lineForSubstitution;
     }
 
-    //This method lets us replace this part of the line, with random length from a random positions,
+    //This method lets us replace this part of the line, with random lengthof substring from a random positions,
     //in the source line, to random positions in another one
     public string SubstituteThePartOfString()
     {
-      int[] indexOfStart = RandomPosition(SourceLine.Length, LineForSubstitution.Length);
-      int[] length = RandomLength(SourceLine.Length, LineForSubstitution.Length, indexOfStart);
-      string substring = SourceLine.Substring(indexOfStart[0], length[0]);
-      string resultAfterSubstitution = LineForSubstitution.Remove(indexOfStart[1], length[1]);
-      resultAfterSubstitution = resultAfterSubstitution.Insert(indexOfStart[1], substring);
+      int indexInSourceLine = RandomPosition(SourceLine.Length);
+      int indexInLineForSubstitude = RandomPosition(LineForSubstitution.Length);         
+      int lengthInSourceLine = RandomLength(SourceLine.Length, indexInSourceLine);
+      int lengthInLineForSubstitude= RandomLength(LineForSubstitution.Length, indexInLineForSubstitude);
+      string substring = SourceLine.Substring(indexInSourceLine, lengthInSourceLine);
+      string resultAfterSubstitution = LineForSubstitution.Remove(indexInLineForSubstitude, lengthInLineForSubstitude);
+      resultAfterSubstitution = resultAfterSubstitution.Insert(indexInLineForSubstitude, substring);
       return resultAfterSubstitution;
     }
 
     //For setting the random position in which we cut out the part of the line
     //to the random position where we insert this part
-    public int[] RandomPosition(int lengthOfSourceLine, int lengthOfLineForSubstitute)
+    public int RandomPosition(int lengthOfLine)
     {
-      int[] position = new int[AMOUNTOFLINES];
-      position[0] = rnd.Next(lengthOfSourceLine);
-      position[1] = rnd.Next(lengthOfLineForSubstitute);
+      int position = rnd.Next(lengthOfLine);
       return position;
     }
 
-    //For setting the source line a random length of a line which we want to replace
-    //and the random length in another line where we want to insert
-    public int[] RandomLength(int lengthOfSourceLine, int lengthOfLineForSubstitute, int[] indexOfStart)
+    //For setting the source line a random lengthOfSubstringInSourceLine of a line which we want to replace
+    //and the random lengthOfSubstringInSourceLine in another line where we want to insert
+    public int RandomLength(int lengthOfLine, int indexOfStart)
     {
-      int positionStartInSourceLine = indexOfStart[0];
-      int positionStartLineForSubstitude = indexOfStart[1];
-      int[] length = new int[AMOUNTOFLINES];
-      length[0] = rnd.Next(1,lengthOfSourceLine - positionStartInSourceLine);
-      length[1] = rnd.Next(1,lengthOfLineForSubstitute - positionStartLineForSubstitude);
-      return length;
+      int lengthInLine = rnd.Next(1, lengthOfLine - indexOfStart);
+      return lengthInLine;
     }
   }
 }
