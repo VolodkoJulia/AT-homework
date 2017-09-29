@@ -9,11 +9,8 @@ namespace RandomChangeTheSymbolsInString
     //random amount of symbols from random index in the source line to another string 
     static void Main()
     {
-      const string SOURCELINE = "QWERTYUIOP";
-      const string LINEFORINSERTION = "asdfghjk";
-
-      string sourceLine = SOURCELINE;
-      string lineForSubstitution = LINEFORINSERTION;
+      string sourceLine = "QWERTYUIOP";
+      string lineForSubstitution = "asdfgh";
 
       StringSubstitute stringSubstitute = new StringSubstitute(sourceLine, lineForSubstitution);
       string resultOfSubstitution = stringSubstitute.Substitute();
