@@ -25,7 +25,7 @@ namespace RandomChangeTheSymbolsInString
 
     //This method lets us replace this part of the line, with random length from a random positions,
     //in the source line, to random positions in another one
-    public string Substitute()
+    public string SubstituteThePartOfString()
     {
       int[] indexOfStart = RandomPosition(SourceLine.Length, LineForSubstitution.Length);
       int[] length = RandomLength(SourceLine.Length, LineForSubstitution.Length, indexOfStart);

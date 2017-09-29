@@ -14,7 +14,7 @@ namespace RandomChangeTheSymbolsInString
       try
       {
         StringSubstitute stringSubstitute = new StringSubstitute(sourceLine, lineForSubstitution);
-        string resultOfSubstitution = stringSubstitute.Substitute();
+        string resultOfSubstitution = stringSubstitute.SubstituteThePartOfString();
         Write("The source line is:\n" + sourceLine + "\nThe line for substitution is:\n" + lineForSubstitution + "\nThe line after substitution is:\n" + resultOfSubstitution);
       }
       catch (EmptyStringException ex)
