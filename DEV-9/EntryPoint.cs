@@ -6,12 +6,16 @@ namespace RandomChangeTheSymbolsInString
   //The entry point of the program
   class EntryPoint
   {
+    const string SOURCELINE = "QWERTYUIOP";
+    const string LINEFOREPLACING = "asdfgh";
+
     //This method is used for calling the method for substitution
-    //random amount of symbols from random index in the source line to another string 
+    //random amount of symbols from random index in the source line to another string.
     static void Main()
     {
-      string sourceLine = "QWERTYUIOP";
-      string lineForSubstitution = "asdfgh";
+      string sourceLine = SOURCELINE;
+      string lineForSubstitution = LINEFOREPLACING;
+
       try
       {
         StringSubstitute stringSubstitute = new StringSubstitute(sourceLine, lineForSubstitution);
