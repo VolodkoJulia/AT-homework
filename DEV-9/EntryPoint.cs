@@ -7,7 +7,7 @@ namespace RandomChangeTheSymbolsInString
   class EntryPoint
   {
     const string SOURCELINE = "QWERTYUIOP";
-    const string LINEFOREPLACING = "asdfgh";
+    const string LINEFOREPLACING = "asdfghj";
 
     //This method is used for calling the method for substitution
     //random amount of symbols from random index in the source line to another string.
