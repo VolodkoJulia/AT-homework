@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Text;
 using static System.Console;
 
 namespace RepeatElementInArray
@@ -8,7 +9,8 @@ namespace RepeatElementInArray
   /// This class is consisted the methods to display an array before verification and after it.
   /// </summary>
   class OutputerOfArrays
-  { 
+  {
+    StringBuilder builder = new StringBuilder();
     /// <summary>
     /// The method to display an array before verification.
     /// </summary>
@@ -21,7 +23,9 @@ namespace RepeatElementInArray
       {
         for (int j = 0; j < array[i].Length; j++)
         {
-          Write(String.Format("{0:f5}", array[i][j]) + " ");
+          //Write(String.Format("{0:f5}", array[i][j]) + " ");
+          builder.Append(array[i][j] + " ");
+          Write(builder);
         }
         WriteLine();
       }    
@@ -38,7 +42,8 @@ namespace RepeatElementInArray
       Write("\nArray with duplicate elements:");
       for (int i = 0; i < arrayAfterCheck.Count; i++)
       {
-        Write(String.Format("{0:f4}", arrayAfterCheck[i]) + "  ");
+        builder.Append(arrayAfterCheck[i] + " ");
+        Write(builder);
       }
     }
   }
