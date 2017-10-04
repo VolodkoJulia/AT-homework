@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="ElementChecker.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="ExistenceDuplicateElements.cs" />
     <Compile Include="GeneratorOFArray.cs" />
     <Compile Include="OutputerOfArrays.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
