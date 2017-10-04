@@ -15,7 +15,7 @@ namespace RepeatElementInArray
     static void Main()
     {
       GeneratorOFArray generatorOfArray = new GeneratorOFArray();
-      double[][] afterArrayGeneration = generatorOfArray.FillArray();
+      double[][] afterArrayGeneration = generatorOfArray.Fill2DArray();
 
       OutputerOfArrays outputer = new OutputerOfArrays();
       outputer.OutputDoubleArray(afterArrayGeneration);

@@ -16,7 +16,7 @@ namespace RepeatElementInArray
     /// <returns>
     /// The two-dimensional array after filling.
     /// </returns>
-    public double[][] FillArray()
+    public double[][] Fill2DArray()
     {
       Random rnd = new Random();
       double[][] array = new double[rnd.Next(MINSIZEOFARRAY, MAXSIZEOFARRAY)][];

@@ -38,9 +38,9 @@ namespace RepeatElementInArray
           }
           if (count >= 2)
           {
-            for (int checker = 0; checker < arrayAfterCheck.Count; checker++)
+            for (int counter = 0; counter < arrayAfterCheck.Count; counter++)
             {
-              if (Abs((double)arrayAfterCheck[checker] - array[i][j]) < EPSILON)
+              if (Abs((double)arrayAfterCheck[counter] - array[i][j]) < EPSILON)
               {
                 arrayAfterCheck.Remove(array[i][j]);
               }
