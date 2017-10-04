@@ -23,8 +23,8 @@ namespace RepeatElementInArray
       ElementChecker elementChecker = new ElementChecker();
       ArrayList resultArray = elementChecker.CheckElements(afterArrayGeneration);
 
-      bool unique = generatorOfArray.CheckNonuniqueElement(resultArray);
-      if (unique)
+      bool existenceNonuniqueElement = elementChecker.CheckExistanceNonuniqueElement(resultArray);
+      if (existenceNonuniqueElement)
       {
         Write("\nThere are no any duplicate elements.");
       }
