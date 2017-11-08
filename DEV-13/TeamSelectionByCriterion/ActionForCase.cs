@@ -14,7 +14,7 @@ namespace TeamSelectionByCriterion
     const string TRYAGAIN = "Try again.\n";
 
     //In every case the algorithm of actions is called.
-   public void CallAlgorithmForCase()
+    public void CallAlgorithmForCase()
     {
       bool choice = true;
       while (choice)
@@ -57,8 +57,8 @@ namespace TeamSelectionByCriterion
         {
           WriteLine(ex.Message);
         }
-      }
     }
+  }
 
     //For verify input information and to calling the method with different strategy fo every case.
     //Also for outputing result array of coders.
