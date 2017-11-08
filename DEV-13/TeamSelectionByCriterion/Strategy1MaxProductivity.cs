@@ -1,7 +1,7 @@
 ﻿namespace TeamSelectionByCriterion
 {
   //Realization of the Algorithm(). For search the maximum of the productivity. Use cycle: from Lead to Junior.
-  class Strategy1MaxProductivity : Strategy
+  public class Strategy1MaxProductivity : Strategy
   {
     public override int[] Algorithm(int userPrice)
     {

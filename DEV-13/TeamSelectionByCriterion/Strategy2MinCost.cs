@@ -1,12 +1,12 @@
 ﻿namespace TeamSelectionByCriterion
 {
-  class Strategy2MinCost: Strategy
+  public class Strategy2MinCost: Strategy
   { 
     //Realization of the Algorithm(). For search the minimum of the price. Use cycle: from Junior to Lead.
     public override int[] Algorithm(int userProductivity)
     {
       int counterJun = 0, counterMid = 0, counterSen = 0, counterLead = 0, minProd = 0;
-      for (int i = 0; minProd < userProductivity; i++)
+      for (int i = 0; minProd <= userProductivity; i++)
       {
         minProd += lead.Productivity * counterLead;
         counterLead++;
@@ -16,7 +16,7 @@
           minProd -= lead.Productivity;
           break;
         }
-        for (int j = 0; minProd < userProductivity; j++)
+        for (int j = 0; minProd <= userProductivity; j++)
         {
           minProd += senior.Productivity * counterSen;
           counterSen++;
@@ -26,7 +26,7 @@
             minProd -= senior.Productivity;
             break;
           }
-          for (int k = 0; minProd < userProductivity; k++)
+          for (int k = 0; minProd <= userProductivity; k++)
           {
             minProd += middle.Productivity * counterMid;
             counterMid++;
@@ -36,7 +36,7 @@
               minProd -= middle.Productivity;
               break;
             }
-            for (int l = 0; minProd < userProductivity; l++)
+            for (int l = 0; minProd <= userProductivity; l++)
             {
               minProd = junior.Productivity * counterJun;
               counterJun++;

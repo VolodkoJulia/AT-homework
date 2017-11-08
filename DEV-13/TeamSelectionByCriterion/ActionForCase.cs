@@ -8,7 +8,7 @@ namespace TeamSelectionByCriterion
   public class ActionForCase
   {
     const string ENTERPRICE = "Enter the price which you want to invest in your project:\n >>";
-    const string SELECTCCRITERION = "Choose criterion:\n 1)Maximum productivity.\n 2)Minimum price.\n 3)Selection criterion.\n  >>";
+    const string SELECTCCRITERION = "Choose criterion:\n 1)Maximum productivity.\n 2)Minimum price.\n 3)Minimum number of employees.\n  >>";
     const string MAXPRODUCTIVITY = "Enter the max productivity for these case:";
     const string ENTERPRODUCTIVITY = "\nEnter the productivity which you can use in the next cases:\n >>";
     const string TRYAGAIN = "Try again.\n";
