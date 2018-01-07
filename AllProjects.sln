@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatElementInArray", "DEV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformFromCirillicToLatin", "DEV-11\TransformFromCirillicToLatin.csproj", "{4BA25335-CF4A-4C94-80E9-FA80DEE708D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamSelectionByCriterion", "DEV-13\TeamSelectionByCriterion\TeamSelectionByCriterion.csproj", "{BFF1B554-94AA-4DDF-A484-9916364CAA67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "DEV-13\UnitTestProject1\UnitTestProject1.csproj", "{1F813923-2FC1-4109-8016-116E10935CAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{4BA25335-CF4A-4C94-80E9-FA80DEE708D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BA25335-CF4A-4C94-80E9-FA80DEE708D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BA25335-CF4A-4C94-80E9-FA80DEE708D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF1B554-94AA-4DDF-A484-9916364CAA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF1B554-94AA-4DDF-A484-9916364CAA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF1B554-94AA-4DDF-A484-9916364CAA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF1B554-94AA-4DDF-A484-9916364CAA67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F813923-2FC1-4109-8016-116E10935CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F813923-2FC1-4109-8016-116E10935CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F813923-2FC1-4109-8016-116E10935CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F813923-2FC1-4109-8016-116E10935CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
